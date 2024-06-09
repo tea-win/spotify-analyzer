@@ -9,6 +9,7 @@ function App() {
   const [searchInput, setSearchInput] = useState("");
   const [accessToken, setAccessToken] = useState("");
   const [albums, setAlbums] = useState([]);
+  const [savedCovers, setSavedCovers] = useState([]); // State to store saved album covers
 
   // Function to fetch albums and tracks
   const fetchAlbumsAndTracks = async () => {
@@ -109,9 +110,8 @@ function App() {
   };
 
   const handleSaveImage = (imageUrl) => {
-    // Logic to handle saving the image
-    console.log("Image URL:", imageUrl);
-    // You can add more functionality here, like triggering a download or saving to a server
+    setSavedCovers((prevCovers) => [...prevCovers, imageUrl]);
+    console.log("Saved Covers:", savedCovers);
   };
 
   return (
