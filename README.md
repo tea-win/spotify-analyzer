@@ -1,5 +1,3 @@
-# Music Explorer
-
 A simple web application that allows users to search for artists and check all their albums and tracks' information, including BPM (beats per minute). Users can also create a 5x5 grid of their favorite albums. The app is built using React and utilizes the Spotify API for fetching music data.
 
 ## Features
